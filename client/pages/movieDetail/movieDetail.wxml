@@ -1,0 +1,23 @@
+
+<view class="user-card">
+  <view class='movie-wrapper'>
+    <image class='movie-image' src="{{movieImage}}"></image>
+    <view class='title'>{{title}}</view>
+    <view class='description'>{{description}}</view>
+  </view>
+  <view class='btn'>
+    <button bindtap='seeReviews'>查看影评</button>
+
+    <button bindtap='addReviews' wx:if="{{!hasMyReview}}">添加影评</button>
+    <button bindtap='seeMyReview' wx:if="{{hasMyReview}}">我的影评</button>
+  </view>
+
+  <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modalDlg" wx:if="{{showModal}}">
+    <view class='btn'>
+      <button class='btn2' bindtap="useText">文字</button>
+      <button class='btn2'bindtap="useVoice">音频</button>
+      <button class='btn2'bindtap="cancel">取消</button>
+    </view>
+  </view>
+</view>

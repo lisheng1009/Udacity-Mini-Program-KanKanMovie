@@ -1,0 +1,94 @@
+/* client/pages/reviewDetail/reviewDetail.wxss */
+.movie-wrapper{
+  margin: 50rpx 0 150rpx;
+}
+
+
+.user-head {
+  margin-left: 53rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.user-name {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+  margin-top: 30rpx;
+}
+
+.text-review{
+  margin: 30rpx 30rpx;
+  font-size: 30rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg {
+  width: 100%;
+  height: 280rpx;
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  z-index: 9999;
+  /* margin: -370rpx 85rpx; */
+  background-color: #fff;
+  /* border-radius: 36rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-wrapper {
+  margin-top: 40rpx;
+}
+
+.movie-image {
+  width: 67.5px;
+  height: 94.5px;
+  display: block;
+  margin: auto;
+}
+
+.movie-title {
+  text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+.review-content {
+  margin: 30rpx 30rpx;
+}
+
+
+button {
+  margin-top: 30rpx;
+  width: 50%;
+  display: inline-block;
+}
+
+/* 文字 音频 取消 */
+.btns {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+.btn {
+  width: 100%;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/hotMovies/hotMovies",
+    "pages/reviewDetail/reviewDetail",
+    "pages/movieDetail/movieDetail",
+    "pages/editReview/editReview",
+    "pages/preview(影评预览)/preview",
+    "pages/reviewList(影评列表)/reviewList"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,33 @@
+<view wx:if="{{!userInfo}}">
+  <view class="unlogin-card">
+    <view class="unlogin-head"></view>
+    <view class="unlogin-info">
+      <view class="unlogin-text">未登录</view>
+      <view class="unlogin-tips">点击微信登录后可查看</view>
+    </view>
+  </view>
+  <button class="unlogin-btn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">微信登录</button>
+</view>
+<view class="review-list" wx:else>
+
+  <view class='btns'>
+    <button bindtap='getSubmit' class='review-button'>我发布的</button>
+    <button bindtap='getCollect' class='collection-button'>我收藏的</button>
+  </view>
+  <view bindtap='onReviewDetail' class='reviews' wx:for="{{reviewList}}" data-avatar="{{item.user_avatar}}" data-name="{{item.user_name}}" data-type="{{item.type}}" data-review="{{item.movie_review}}" data-review_id="{{item.id}}" data-movieId="{{item.movie_id}}" data-title="{{item.movie_title}}"
+    data-image="{{item.movie_image}}">
+
+
+    <image class='movie-image' src='{{item.movie_image}}'></image>
+    <view class='review-wrapper'>
+      <view class='movie-title'>{{item.movie_title}}</view>
+      <view class='text-review' wx:if="{{item.type=='text'}}">{{item.movie_review}}</view>
+      <view class='audio-review' bindtap='playAudio' wx:else>{{item.duration}}s</view>
+      <view class='user-wrapper'>
+        <image class='user-head' src='{{item.user_avatar}}'></image>
+        <text class='user-name'>{{item.user_name}}</text>
+      </view>
+    </view>
+  </view>
+  <button class='backBtn' bindtap='backToHome'>回到首页</button>
+</view>

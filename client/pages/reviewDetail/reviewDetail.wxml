@@ -1,0 +1,36 @@
+
+<view class="user-card">
+  <view class='movie-wrapper'>
+    <image class='movie-image' src="{{movieImage}}"></image>
+    <view class='movie-title'>{{title}}</view>
+    <view class='review-content'>
+
+      <view class='user-wrapper'>
+        <image class='user-head' src='{{userAvatar}}'></image>
+        <text class='user-name'>{{userName}}的影评</text>
+      </view>
+
+      <view class='text-review' wx:if="{{review_type=='text'}}">"{{review}}"</view>
+      <view class='audio-review' wx:else>
+        <button class='play-button' bindtap='playAudio'>播放音频</button>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{!myMode}}" class='btns'>
+    <button bindtap='collectReview' class='leftBtn'>收藏影评</button>
+    <button bindtap='addReview' class='rightBtn' wx:if="{{!hasMyReview}}">写影评</button>
+    <button bindtap='seeMyReview' class='rightBtn' wx:if="{{hasMyReview}}">我的影评</button>
+  </view>
+</view>
+
+
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+<view class="modalDlg" wx:if="{{showModal}}">
+  <!-- <image src="/figures/logo-smile.png"/> -->
+  <!-- <text>欢迎来到模态对话框~</text> -->
+  <button class='btn' bindtap="useText">文字</button>
+  <button class='btn' bindtap="useVoice">音频</button>
+  <button class='btn' bindtap="cancel">取消</button>
+</view>

@@ -1,0 +1,9 @@
+<view class='movie-list'>
+  <view bindtap='onMovieDetail' class='hot-movies' wx:for="{{movieList}}" data-image="{{item.image}}" data-title="{{item.title}}" data-description="{{item.description}}" data-id="{{item.id}}">
+    <image class='movie-image' src="{{item.image}}"></image>
+    <view class='movie-info'>
+      <view class='movie-title'>{{item.title}}</view>
+      <view class='movie-category'>{{item.category}}</view>
+    </view>
+  </view>
+</view>

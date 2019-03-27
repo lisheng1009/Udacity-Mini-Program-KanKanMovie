@@ -1,0 +1,51 @@
+/* client/pages/reviewList(影评列表)/reviewList.wxss */
+
+.review-list {
+  margin: 50rpx 0 150rpx;
+}
+
+.review {
+  padding: 50rpx;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+  margin-top: 30rpx;
+}
+
+.review-wrapper {
+  margin: 0 20rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.user-head {
+  margin-left: 53rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.user-name {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+
+.text-review {
+  font-size: 26rpx;
+  opacity: 0.7;
+  line-height: 70rpx;
+  margin: 0 30rpx;
+}
+
+.audio-review {
+  font-size: 26rpx;
+  margin: 0 30rpx;
+}
+
+button {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}

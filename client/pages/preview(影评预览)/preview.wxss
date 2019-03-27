@@ -1,0 +1,38 @@
+/* client/pages/preview(影评预览)/preview.wxss */
+
+.movie-image {
+  margin-left: 50rpx;
+  width: 67.5px;
+  height: 94.5px;
+  display: block;
+  margin: auto;
+}
+
+.movie-title {
+  text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+.review {
+  text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+.play-button {
+  display: block;
+  margin: auto;
+}
+
+button {
+  margin-top: 30rpx;
+  width: 50%;
+  display: inline-block;
+}
+
+.btns {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}

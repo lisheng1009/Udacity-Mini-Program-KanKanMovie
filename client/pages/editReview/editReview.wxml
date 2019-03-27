@@ -1,0 +1,19 @@
+<view class="user-card">
+  <view class='login-wrapper'>
+    <image class='movie-image' src="{{movieImage}}"></image>
+    <view class='movie-title'>{{title}}</view>
+
+  </view>
+
+  <view class='review-cnt' wx:if="{{reviewType == 'text'}}">
+    <textarea class='review-ipt' placeholder-class='review-placeholder' placeholder='请填写你的评价' auto-focus maxlength='255' bindinput='onInput'></textarea>
+  </view>
+
+  <view class='review-voice' wx:else>
+    <view class='tip-voicein'>输入你的影评内容...</view>
+    <button class='voice-button' bindtouchstart='onStartRecord' bindtouchend='onEndRecord'>按住录音</button>
+    <button class="play-btn {{!reviewValue ? 'dis' : ''}}" bindtap='playAudio'>播放音频</button>
+  </view>
+  <view class="done-btn {{!reviewValue ? 'dis' : ''}}" bindtap="addreview">完成
+  </view>
+</view>

@@ -1,0 +1,18 @@
+
+<view class="user-card">
+  <view class='login-wrapper'>
+    <image class='movie-image' src="{{movieImage}}"></image>
+    <view class='movie-title'>{{title}}</view>
+  </view>
+
+  <view class='review' wx:if="{{reviewType == 'text'}}">{{review}}</view>
+  <view class='review-voice' wx:else>
+    <button class='play-button' bindtap='playAudio'>播放音频</button>
+  </view>
+
+  <view class='btns'>
+    <button bindtap='backToRewrite'>重新编辑</button>
+    <button bindtap='submitReview'>发布影评</button>
+  </view>
+
+</view>

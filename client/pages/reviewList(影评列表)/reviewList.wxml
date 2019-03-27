@@ -1,0 +1,17 @@
+<view class='review-list'>
+  <view bindtap='onReviewDetail' class='reviews' wx:for="{{reviewList}}" data-avatar="{{item.user_avatar}}" data-name="{{item.user_name}}" data-review="{{item.movie_review}}" data-movie_id="{{item.movie_id}}" data-review_id="{{item.review_id}}" data-title="{{item.movie_title}}"
+    data-type="{{item.type}}">
+
+    <view class='user-wrapper'>
+      <image class='user-head' src='{{item.user_avatar}}' mode='widthFix'></image>
+      <view class='user-name'>{{item.user_name}}</view>
+    </view>
+    <view class='review-wrapper'>
+      <view class='text-review' wx:if="{{item.type=='text'}}">{{item.movie_review}}</view>
+      <view class='audio-review' bindtap='playAudio' wx:else>{{item.duration}}s</view>
+    </view>
+
+
+  </view>
+  <button bindtap='backToHome'>回到首页</button>
+</view>

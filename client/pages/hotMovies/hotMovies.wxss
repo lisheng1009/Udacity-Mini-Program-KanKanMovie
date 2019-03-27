@@ -1,0 +1,22 @@
+/* client/pages/hotMovies/hotMovies.wxss */
+
+.hot-movies{
+   margin: 40rpx 30rpx 50rpx;
+  display: flex;
+}
+
+.movie-image {
+  margin-left: 50rpx;
+  width: 67.5px;
+  height: 94.5px;
+  display: inline-block
+}
+
+.movie-info{
+  margin: 40rpx 0 0 30rpx ;
+}
+
+.movie-category{
+  font-size: 27rpx;
+  opacity: 0.7;
+}

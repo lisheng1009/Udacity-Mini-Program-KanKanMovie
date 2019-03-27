@@ -1,0 +1,114 @@
+/* pages/user/user.wxss */
+
+.movie-image {
+  margin-left: 50rpx;
+  width: 67.5px;
+  height: 94.5px;
+  display: inline-block
+}
+
+.reviews {
+  margin: 50rpx 30rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-wrapper {
+  margin: 40rpx 0 0 30rpx ;
+}
+
+.btns{
+  margin-top: 40rpx;
+  display: flex;
+  /* margin: auto; */
+}
+
+.review-button {
+  width: 30%;
+}
+
+.collection-button {
+  width: 30%;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+  margin-top: 30rpx;
+}
+
+.user-head {
+  flex-shrink: 0;
+  margin-left: 53rpx;
+  height: 50rpx;
+  width: 50rpx;
+  background: #f5e069;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.user-name {
+  flex: 1;
+  margin: 0 31rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-review {
+  font-size: 26rpx;
+  opacity: 0.7;
+  line-height: 70rpx;
+  margin: 0 30rpx;
+}
+
+/* .user-card {
+  margin: 50rpx 27rpx 0;
+  background: #fff;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+}
+
+
+
+.user-split {
+  height: 8rpx;
+  background: #f9f9f9;
+}
+
+.user-options .option {
+  display: flex;
+  align-items: center;
+  margin-left: 46rpx;
+  margin-right: 27rpx;
+  height: 128rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.user-options .option:last-child {
+  border-bottom: none;
+}
+
+.user-options .option-title {
+  flex: 1;
+  font-size: 30rpx;
+  color: rgba(29, 29, 38, 0.8);
+}
+
+.user-options .option-arrow {
+  width: 11rpx;
+  height: 18rpx;
+} */
+
+.backBtn {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}

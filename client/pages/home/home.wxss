@@ -1,0 +1,48 @@
+.user-head {
+  margin-left: 53rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.user-name {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+}
+
+.home-wrapper {
+  margin-top: 30rpx;
+}
+
+.movie-image {
+  width: 270px;
+  height: 378px;
+  display: block;
+  margin: auto;
+}
+
+.movie-title {
+  text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+button {
+  margin-top: 100rpx;
+  width: 50%;
+  display: inline-block;
+}
+
+buttons {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}

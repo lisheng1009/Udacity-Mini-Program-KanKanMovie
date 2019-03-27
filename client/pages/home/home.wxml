@@ -1,0 +1,14 @@
+<view class='home-wrapper'>
+  <image class='movie-image' bindtap='movieDetail' src="{{filmInfo.image}}"></image>
+  <view class='movie-title'>{{reviewInfo.movie_title}}</view>
+  <view class='user-wrapper' bindtap='reviewDetail'>
+    <image class='user-head' src='{{reviewInfo.user_avatar}}'></image>
+    <text class='user-name'>{{reviewInfo.user_name}}给你推荐了一部电影</text>
+  </view>
+
+  <view class='buttons'>
+    <button bindtap='hotMovies'>热门</button>
+    <button bindtap='my'>我的</button>
+  </view>
+
+</view>
